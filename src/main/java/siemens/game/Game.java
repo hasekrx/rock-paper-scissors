@@ -40,10 +40,10 @@ public class Game {
 		}
 	}
 
-	private String getWinner(Player player1, Player player2) {
+	public String getWinner(Player player1, Player player2) {
 
 		MoveEnum moveP1 = player1.getStrategy().getMove();
-		MoveEnum moveP2 = player1.getStrategy().getMove();
+		MoveEnum moveP2 = player2.getStrategy().getMove();
 
 		if (moveP1.equals(moveP2))
 			return "tie";

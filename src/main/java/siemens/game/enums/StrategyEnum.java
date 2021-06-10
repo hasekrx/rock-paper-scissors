@@ -2,7 +2,7 @@ package siemens.game.enums;
 
 public enum StrategyEnum {
 
-	RANDOM, STONE;
+	RANDOM, STONE, PAPER, SCISSORS;
 
 	public static boolean exists(String str) {
 		for (StrategyEnum stratetegy : StrategyEnum.values()) {
